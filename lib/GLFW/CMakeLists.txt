@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 project(GLFW)
 
-file(GLOB GLFW_SOURCES src/*.c *.h)
+file(GLOB GLFW_SOURCES src/*.c src/*.h *.h)
 
 if(NOT GLFW_SOURCES)
     message(FATAL_ERROR "No source files found for GLFW!")
