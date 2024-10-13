@@ -16,19 +16,41 @@ events:
       - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
       Compiler: C:/Program Files/LLVM/bin/clang.exe 
       Build flags: 
       Id flags:  
       
       The output was:
+      1
+      fatal error: error in backend: IO failure on output stream: no space on device
+      PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+      Stack dump:
+      0.	Program arguments: "C:\\\\Program Files\\\\LLVM\\\\bin\\\\clang.exe" -cc1 -triple x86_64-pc-windows-msvc19.39.33523 -emit-obj -mincremental-linker-compatible -dumpdir a- -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerId.c -mrelocation-model pic -pic-level 2 -mframe-pointer=none -relaxed-aliasing -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -fdebug-compilation-dir=E:\\\\GitHub\\\\projects\\\\Cmake_first_project\\\\build\\\\CMakeFiles\\\\3.30.3\\\\CompilerIdC -fcoverage-compilation-dir=E:\\\\GitHub\\\\projects\\\\Cmake_first_project\\\\build\\\\CMakeFiles\\\\3.30.3\\\\CompilerIdC -resource-dir "C:\\\\Program Files\\\\LLVM\\\\lib\\\\clang\\\\19" -internal-isystem "C:\\\\Program Files\\\\LLVM\\\\lib\\\\clang\\\\19\\\\include" -internal-isystem "C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Community\\\\VC\\\\Tools\\\\MSVC\\\\14.39.33519\\\\include" -internal-isystem "C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Community\\\\VC\\\\Tools\\\\MSVC\\\\14.39.33519\\\\atlmfc\\\\include" -internal-isystem "C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Include\\\\10.0.22621.0\\\\ucrt" -internal-isystem "C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Include\\\\10.0.22621.0\\\\shared" -internal-isystem "C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Include\\\\10.0.22621.0\\\\um" -internal-isystem "C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Include\\\\10.0.22621.0\\\\winrt" -internal-isystem "C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Include\\\\10.0.22621.0\\\\cppwinrt" -ferror-limit 19 -fno-use-cxa-atexit -fms-extensions -fms-compatibility -fms-compatibility-version=19.39.33523 -fskip-odr-check-in-gmf -fdelayed-template-parsing -faddrsig -o C:\\\\Users\\\\60214\\\\AppData\\\\Local\\\\Temp\\\\CMakeCCompilerId-63c519.o -x c CMakeCCompilerId.c
+      1.	<eof> parser at end of file
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Program Files/LLVM/bin/clang.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
       0
       
       
-      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
       
       The C compiler identification is Clang, found in:
-        E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/3.30.3/CompilerIdC/a.exe
+        E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/3.30.3/CompilerIdC/CMakeCCompilerId.o
       
   -
     kind: "message-v1"
@@ -58,19 +80,41 @@ events:
       - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
       Compiler: C:/Program Files/LLVM/bin/clang++.exe 
       Build flags: 
       Id flags:  
       
       The output was:
+      1
+      fatal error: error in backend: IO failure on output stream: no space on device
+      PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+      Stack dump:
+      0.	Program arguments: "C:\\\\Program Files\\\\LLVM\\\\bin\\\\clang++.exe" -cc1 -triple x86_64-pc-windows-msvc19.39.33523 -emit-obj -mincremental-linker-compatible -dumpdir a- -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerId.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=none -relaxed-aliasing -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -fdebug-compilation-dir=E:\\\\GitHub\\\\projects\\\\Cmake_first_project\\\\build\\\\CMakeFiles\\\\3.30.3\\\\CompilerIdCXX -fcoverage-compilation-dir=E:\\\\GitHub\\\\projects\\\\Cmake_first_project\\\\build\\\\CMakeFiles\\\\3.30.3\\\\CompilerIdCXX -resource-dir "C:\\\\Program Files\\\\LLVM\\\\lib\\\\clang\\\\19" -internal-isystem "C:\\\\Program Files\\\\LLVM\\\\lib\\\\clang\\\\19\\\\include" -internal-isystem "C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Community\\\\VC\\\\Tools\\\\MSVC\\\\14.39.33519\\\\include" -internal-isystem "C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Community\\\\VC\\\\Tools\\\\MSVC\\\\14.39.33519\\\\atlmfc\\\\include" -internal-isystem "C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Include\\\\10.0.22621.0\\\\ucrt" -internal-isystem "C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Include\\\\10.0.22621.0\\\\shared" -internal-isystem "C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Include\\\\10.0.22621.0\\\\um" -internal-isystem "C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Include\\\\10.0.22621.0\\\\winrt" -internal-isystem "C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Include\\\\10.0.22621.0\\\\cppwinrt" -fdeprecated-macro -ferror-limit 19 -fno-use-cxa-atexit -fms-extensions -fms-compatibility -fms-compatibility-version=19.39.33523 -std=c++14 -fskip-odr-check-in-gmf -fdelayed-template-parsing -fcxx-exceptions -fexceptions -faddrsig -o C:\\\\Users\\\\60214\\\\AppData\\\\Local\\\\Temp\\\\CMakeCXXCompilerId-273615.o -x c++ CMakeCXXCompilerId.cpp
+      1.	<eof> parser at end of file
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/LLVM/bin/clang++.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
       0
       
       
-      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
       
       The CXX compiler identification is Clang, found in:
-        E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/3.30.3/CompilerIdCXX/a.exe
+        E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/3.30.3/CompilerIdCXX/CMakeCXXCompilerId.o
       
   -
     kind: "message-v1"
@@ -101,8 +145,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/CMakeScratch/TryCompile-swqbvy"
-      binary: "E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/CMakeScratch/TryCompile-swqbvy"
+      source: "E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/CMakeScratch/TryCompile-1avhj3"
+      binary: "E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/CMakeScratch/TryCompile-1avhj3"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
       CMAKE_C_FLAGS: ""
@@ -112,16 +156,16 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/CMakeScratch/TryCompile-swqbvy'
+        Change Dir: 'E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/CMakeScratch/TryCompile-1avhj3'
         
-        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_5082b
-        [1/2] C:\\PROGRA~1\\LLVM\\bin\\clang.exe   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_5082b.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_5082b.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_5082b.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeCCompilerABI.c"
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\clang.exe -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -v  -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_5082b.dir/CMakeCCompilerABI.c.obj -o cmTC_5082b.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_5082b.lib -Xlinker /pdb:cmTC_5082b.pdb -Xlinker /version:0.0     && cd ."
+        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_7f56b
+        [1/2] C:\\PROGRA~1\\LLVM\\bin\\clang.exe   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_7f56b.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_7f56b.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_7f56b.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeCCompilerABI.c"
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\clang.exe -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -v  -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_7f56b.dir/CMakeCCompilerABI.c.obj -o cmTC_7f56b.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_7f56b.lib -Xlinker /pdb:cmTC_7f56b.pdb -Xlinker /version:0.0     && cd ."
         clang version 19.1.0
         Target: x86_64-pc-windows-msvc
         Thread model: posix
         InstalledDir: C:\\Program Files\\LLVM\\bin
-         "C:\\\\Program Files\\\\LLVM\\\\bin\\\\lld-link" -out:cmTC_5082b.exe "-libpath:C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Community\\\\VC\\\\Tools\\\\MSVC\\\\14.39.33519\\\\lib\\\\x64" "-libpath:C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Community\\\\VC\\\\Tools\\\\MSVC\\\\14.39.33519\\\\atlmfc\\\\lib\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.22621.0\\\\ucrt\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.22621.0\\\\um\\\\x64" "-libpath:C:\\\\Program Files\\\\LLVM\\\\lib\\\\clang\\\\19\\\\lib\\\\windows" -nologo -debug /subsystem:console CMakeFiles/cmTC_5082b.dir/CMakeCCompilerABI.c.obj /MANIFEST:EMBED /implib:cmTC_5082b.lib /pdb:cmTC_5082b.pdb /version:0.0\x0d
+         "C:\\\\Program Files\\\\LLVM\\\\bin\\\\lld-link" -out:cmTC_7f56b.exe "-libpath:C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Community\\\\VC\\\\Tools\\\\MSVC\\\\14.39.33519\\\\lib\\\\x64" "-libpath:C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Community\\\\VC\\\\Tools\\\\MSVC\\\\14.39.33519\\\\atlmfc\\\\lib\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.22621.0\\\\ucrt\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.22621.0\\\\um\\\\x64" "-libpath:C:\\\\Program Files\\\\LLVM\\\\lib\\\\clang\\\\19\\\\lib\\\\windows" -nologo -debug /subsystem:console CMakeFiles/cmTC_7f56b.dir/CMakeCCompilerABI.c.obj /MANIFEST:EMBED /implib:cmTC_7f56b.lib /pdb:cmTC_7f56b.pdb /version:0.0\x0d
         
       exitCode: 0
   -
@@ -182,8 +226,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/CMakeScratch/TryCompile-dd8eo4"
-      binary: "E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/CMakeScratch/TryCompile-dd8eo4"
+      source: "E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/CMakeScratch/TryCompile-erl0wx"
+      binary: "E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/CMakeScratch/TryCompile-erl0wx"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
       CMAKE_CXX_FLAGS: ""
@@ -194,16 +238,16 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/CMakeScratch/TryCompile-dd8eo4'
+        Change Dir: 'E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/CMakeScratch/TryCompile-erl0wx'
         
-        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_9b066
-        [1/2] C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_9b066.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_9b066.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_9b066.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp"
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -v  -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_9b066.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_9b066.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_9b066.lib -Xlinker /pdb:cmTC_9b066.pdb -Xlinker /version:0.0     && cd ."
+        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_2adc7
+        [1/2] C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_2adc7.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_2adc7.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_2adc7.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp"
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -v  -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_2adc7.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_2adc7.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_2adc7.lib -Xlinker /pdb:cmTC_2adc7.pdb -Xlinker /version:0.0     && cd ."
         clang version 19.1.0
         Target: x86_64-pc-windows-msvc
         Thread model: posix
         InstalledDir: C:\\Program Files\\LLVM\\bin
-         "C:\\\\Program Files\\\\LLVM\\\\bin\\\\lld-link" -out:cmTC_9b066.exe "-libpath:C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Community\\\\VC\\\\Tools\\\\MSVC\\\\14.39.33519\\\\lib\\\\x64" "-libpath:C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Community\\\\VC\\\\Tools\\\\MSVC\\\\14.39.33519\\\\atlmfc\\\\lib\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.22621.0\\\\ucrt\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.22621.0\\\\um\\\\x64" "-libpath:C:\\\\Program Files\\\\LLVM\\\\lib\\\\clang\\\\19\\\\lib\\\\windows" -nologo -debug /subsystem:console CMakeFiles/cmTC_9b066.dir/CMakeCXXCompilerABI.cpp.obj /MANIFEST:EMBED /implib:cmTC_9b066.lib /pdb:cmTC_9b066.pdb /version:0.0\x0d
+         "C:\\\\Program Files\\\\LLVM\\\\bin\\\\lld-link" -out:cmTC_2adc7.exe "-libpath:C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Community\\\\VC\\\\Tools\\\\MSVC\\\\14.39.33519\\\\lib\\\\x64" "-libpath:C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Community\\\\VC\\\\Tools\\\\MSVC\\\\14.39.33519\\\\atlmfc\\\\lib\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.22621.0\\\\ucrt\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.22621.0\\\\um\\\\x64" "-libpath:C:\\\\Program Files\\\\LLVM\\\\lib\\\\clang\\\\19\\\\lib\\\\windows" -nologo -debug /subsystem:console CMakeFiles/cmTC_2adc7.dir/CMakeCXXCompilerABI.cpp.obj /MANIFEST:EMBED /implib:cmTC_2adc7.lib /pdb:cmTC_2adc7.pdb /version:0.0\x0d
         
       exitCode: 0
   -
@@ -267,8 +311,8 @@ events:
     checks:
       - "Detecting CXX compile features"
     directories:
-      source: "E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/CMakeScratch/TryCompile-7riivg"
-      binary: "E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/CMakeScratch/TryCompile-7riivg"
+      source: "E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/CMakeScratch/TryCompile-qguzye"
+      binary: "E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/CMakeScratch/TryCompile-qguzye"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
       CMAKE_CXX_FLAGS: ""
@@ -278,11 +322,11 @@ events:
       variable: "CMAKE_CXX_FEATURE_TEST"
       cached: true
       stdout: |
-        Change Dir: 'E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/CMakeScratch/TryCompile-7riivg'
+        Change Dir: 'E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/CMakeScratch/TryCompile-qguzye'
         
-        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_feef1
-        [1/2] C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd   -std=c++14 -MD -MT CMakeFiles/cmTC_feef1.dir/feature_tests.cxx.obj -MF CMakeFiles\\cmTC_feef1.dir\\feature_tests.cxx.obj.d -o CMakeFiles/cmTC_feef1.dir/feature_tests.cxx.obj -c E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/CMakeScratch/TryCompile-7riivg/feature_tests.cxx
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_feef1.dir/feature_tests.cxx.obj -o cmTC_feef1.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_feef1.lib -Xlinker /pdb:cmTC_feef1.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_beb24
+        [1/2] C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd   -std=c++14 -MD -MT CMakeFiles/cmTC_beb24.dir/feature_tests.cxx.obj -MF CMakeFiles\\cmTC_beb24.dir\\feature_tests.cxx.obj.d -o CMakeFiles/cmTC_beb24.dir/feature_tests.cxx.obj -c E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/CMakeScratch/TryCompile-qguzye/feature_tests.cxx
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_beb24.dir/feature_tests.cxx.obj -o cmTC_beb24.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_beb24.lib -Xlinker /pdb:cmTC_beb24.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
         
       exitCode: 0
   -
@@ -297,8 +341,8 @@ events:
     checks:
       - "Detecting CXX compile features"
     directories:
-      source: "E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/CMakeScratch/TryCompile-97ti0f"
-      binary: "E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/CMakeScratch/TryCompile-97ti0f"
+      source: "E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/CMakeScratch/TryCompile-ge9tjg"
+      binary: "E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/CMakeScratch/TryCompile-ge9tjg"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
       CMAKE_CXX_FLAGS: ""
@@ -308,11 +352,11 @@ events:
       variable: "CMAKE_CXX_FEATURE_TEST"
       cached: true
       stdout: |
-        Change Dir: 'E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/CMakeScratch/TryCompile-97ti0f'
+        Change Dir: 'E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/CMakeScratch/TryCompile-ge9tjg'
         
-        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_fcc2e
-        [1/2] C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd   -std=c++14 -MD -MT CMakeFiles/cmTC_fcc2e.dir/feature_tests.cxx.obj -MF CMakeFiles\\cmTC_fcc2e.dir\\feature_tests.cxx.obj.d -o CMakeFiles/cmTC_fcc2e.dir/feature_tests.cxx.obj -c E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/CMakeScratch/TryCompile-97ti0f/feature_tests.cxx
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_fcc2e.dir/feature_tests.cxx.obj -o cmTC_fcc2e.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_fcc2e.lib -Xlinker /pdb:cmTC_fcc2e.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        Run Build Command(s): C:/ProgramData/chocolatey/bin/ninja.exe -v cmTC_1e62f
+        [1/2] C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE   -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd   -std=c++14 -MD -MT CMakeFiles/cmTC_1e62f.dir/feature_tests.cxx.obj -MF CMakeFiles\\cmTC_1e62f.dir\\feature_tests.cxx.obj.d -o CMakeFiles/cmTC_1e62f.dir/feature_tests.cxx.obj -c E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/CMakeScratch/TryCompile-ge9tjg/feature_tests.cxx
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_1e62f.dir/feature_tests.cxx.obj -o cmTC_1e62f.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_1e62f.lib -Xlinker /pdb:cmTC_1e62f.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
         
       exitCode: 0
 ...
