@@ -12,5 +12,4 @@ find_package(OpenGL REQUIRED)
 
 add_executable(cmake_imgui main.cpp)
 
-target_include_directories(cmake_imgui PUBLIC ${CMAKE_SOURCE_DIR}/libs/GLFW)
 target_link_libraries(cmake_imgui PUBLIC imgui GLFW backend OpenGL::GL)
