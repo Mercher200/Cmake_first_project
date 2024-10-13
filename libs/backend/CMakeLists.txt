@@ -6,7 +6,12 @@ add_library(backend STATIC imgui_impl_glfw.cpp imgui_impl_glfw.h imgui_impl_open
 
 find_package(OpenGL REQUIRED)
 
+add_library(GLFW STATIC IMPORTED)
+
+set_target_properties(GLFW PROPERTIES
+INTERFACE_INCLUDE_DIRECTORIES "${CAMKE_CURRENT_LIST_DIR}/"
+IMPORTED_LOCATION "${CMAKE_CURRENT_LIST_DIR}/glfw3.lib"
+)
+
 target_include_directories(backend PUBLIC "./")
-target_link_libraries(backend PUBLIC OpenGL::GL imgui GLFW)
-
-
+target_link_libraries(backend PUBLIC OpenGL::GL GLFW imgui)
