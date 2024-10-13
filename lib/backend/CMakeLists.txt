@@ -6,7 +6,7 @@ add_library(backend STATIC imgui_impl_glfw.cpp imgui_impl_glfw.h imgui_impl_open
 
 find_package(OpenGL REQUIRED)
 
-target_include_directories(backend PUBLIC "./")
+target_include_directories(backend PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(backend PUBLIC OpenGL::GL imgui GLFW)
 
 
