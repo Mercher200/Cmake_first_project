@@ -1,0 +1,9 @@
+E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/cmake_imgui.dir
+E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/edit_cache.dir
+E:/GitHub/projects/Cmake_first_project/build/CMakeFiles/rebuild_cache.dir
+E:/GitHub/projects/Cmake_first_project/build/libs/imgui/CMakeFiles/imgui.dir
+E:/GitHub/projects/Cmake_first_project/build/libs/imgui/CMakeFiles/edit_cache.dir
+E:/GitHub/projects/Cmake_first_project/build/libs/imgui/CMakeFiles/rebuild_cache.dir
+E:/GitHub/projects/Cmake_first_project/build/libs/backend/CMakeFiles/backend.dir
+E:/GitHub/projects/Cmake_first_project/build/libs/backend/CMakeFiles/edit_cache.dir
+E:/GitHub/projects/Cmake_first_project/build/libs/backend/CMakeFiles/rebuild_cache.dir
